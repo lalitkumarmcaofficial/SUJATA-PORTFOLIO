@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me-Sujata Singh</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+
+        background-color:palevioletred;
+    }
+   
+    .navbar{
+        display:inline-block;
+        
+    }
+    .navbar li{
+        display:inline-block;
+        font-size: 16px;
+    }
+    .navbar li a{
+        color:blue;
+        padding:20px 10px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+       color:green;
+    }
+    P{
+        font-size: 25px; 
+             Color:darkgreen;
+             
+    }
+span a {
+  background-color: DodgerBlue;
+  border:solid;
+  color:darkgreen;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+ border-radius: 10px;
+ 
+  
+ 
+}
+span a:hover {
+  background-color: RoyalBlue;
+}
+.logo img{
+           
+            float: left;
+            width: 100px;
+        height: 100px;
+       
+            
+        }
+  
+  
+</style> 
+
+<body>
+    <div class="logo">
+        <img src="logo 2.png">
+    </div><br>
+    <header class="header">
+        <div align="center">
+        <div class="navbar">
+            <ul>         
+            <li><a href="index.html" >Home</a></li>
+            <li>   <a href="#" class="active">About me </a></li>
+            <li>  <a href="Contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+        </div>
+    </header><br>
+    <p>
+    I feel so glad to intruduce myself...I m Sujata Singh. I am doing (General Nursing and Midwifery) from Guru Hargovind College of Nursing Ludhiana PUNJAB.
+    Basically I belong from Dadri Greater Noida(UP). My strength are my possitive thinkimg & self Motivation. My hobbies are reading books. The aim of my life is become a Doctor.  <br>
+       <br>
+       Thank You.....<br>
+   <p align="center" >
+     Download Resume:<br>
+     <br>
+     
+    
+     <span>
+        <a href="SUJATA-RESUME.pdf" download>download</a></span></p>
+        <script>
+            let button=document.querySelector("body a");
+            button.addEventListener("click",()=>{
+                const span=+document.querySelector("a span");
+                button.style.paddingRight='10px';
+                span.style.visibility="visible";
+                setTimeout(()=>{
+                    span.style.visibility="hidden";
+                    button.style.paddingRight="0px";
+    
+                })
+            })
+        
+
+    </script>
+    </p>
+
+</body>
+</html>
